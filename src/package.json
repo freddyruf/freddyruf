@@ -3,8 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "http://freddyruf.github.io/freddyruf",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
   },
