@@ -1,1 +1,88 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/freddyruf/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/freddyruf/logo192.png"/><link rel="manifest" href="/freddyruf/manifest.json"/><title>React App</title><script defer="defer" src="/freddyruf/static/js/main.5f0ade39.js"></script><link href="/freddyruf/static/css/main.f855e6bc.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Federico Ruffini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Fira Code', 'monospace'],
+            },
+            colors: {
+              background: '#0a0a0a',
+              surface: '#121212',
+              surfaceHighlight: '#1E1E1E',
+              border: '#333333',
+              primary: '#3b82f6', // Electric Blue
+              accent: '#10b981', // Emerald
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      html {
+        overflow-y: overlay; /* Key property for overlay behavior in WebKit */
+        scrollbar-gutter: stable both-edges; /* fallback */
+      }
+      body {
+        background-color: #000000;
+        color: #e5e5e5;
+        overflow-x: hidden; /* Prevent horizontal scroll caused by scrollbar */
+        width: 100%;
+      }
+      
+      /* Custom Scrollbar - WebKit (Chrome, Edge, Safari) */
+      ::-webkit-scrollbar {
+        width: 8px; /* Width of the scrollbar */
+        height: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: transparent; /* Transparent track so it looks overlaid */
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(51, 51, 51, 0.5); /* Semi-transparent thumb */
+        border-radius: 4px;
+        border: 2px solid transparent; /* Creates padding effect */
+        background-clip: content-box; /* Ensures border works as padding */
+        transition: background-color 0.2s;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(100, 100, 100, 0.8);
+      }
+
+      /* Firefox Fallback */
+      html {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(51, 51, 51, 0.5) transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.1/client",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
